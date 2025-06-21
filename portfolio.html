@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nova Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Nova Logo" width="120">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Il nostro portfolio</h1>
+                <p>Esplora i progetti che hanno trasformato i brand dei nostri clienti</p>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Tutti</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="digital">Digital</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="content">Content</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-image" style="background-color: #f5f5f5;"></div>
+                        <div class="portfolio-info">
+                            <h3>TechCorp Rebranding</h3>
+                            <p>Strategia di marca completa per azienda tech</p>
+                            <span class="portfolio-category">Branding</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="digital">
+                        <div class="portfolio-image" style="background-color: #eaeaea;"></div>
+                        <div class="portfolio-info">
+                            <h3>VerdeVita Social Campaign</h3>
+                            <p>Strategia social media per brand sostenibile</p>
+                            <span class="portfolio-category">Digital</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image" style="background-color: #e0e0e0;"></div>
+                        <div class="portfolio-info">
+                            <h3>Luma E-commerce</h3>
+                            <p>Piattaforma e-commerce per brand di moda</p>
+                            <span class="portfolio-category">Web</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="content">
+                        <div class="portfolio-image" style="background-color: #d5d5d5;"></div>
+                        <div class="portfolio-info">
+                            <h3>Foodies Video Series</h3>
+                            <p>Produzione video per app gastronomica</p>
+                            <span class="portfolio-category">Content</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-image" style="background-color: #cacaca;"></div>
+                        <div class="portfolio-info">
+                            <h3>Bloom Identity</h3>
+                            <p>Identità visiva per startup floristica</p>
+                            <span class="portfolio-category">Branding</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="digital">
+                        <div class="portfolio-image" style="background-color: #bfbfbf;"></div>
+                        <div class="portfolio-info">
+                            <h3>FinX App Launch</h3>
+                            <p>Campagna digitale per lancio app finanziaria</p>
+                            <span class="portfolio-category">Digital</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Cosa dicono i nostri clienti</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <blockquote>
+                            "Nova ha trasformato completamente la nostra presenza online. In 6 mesi abbiamo raddoppiato il traffico e aumentato le conversioni del 40%."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Marco Bianchi</h4>
+                                <p>CEO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Stesso footer della home page -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
