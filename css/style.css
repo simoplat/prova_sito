@@ -1,7 +1,7 @@
 /* Reset e variabili */
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary: #d6b46d;
+    --primary-dark: #877348;
     --secondary: #4b5563;
     --dark: #111827;
     --light: #f9fafb;
@@ -134,7 +134,7 @@ p {
 /* Hero */
 .hero {
     padding: 180px 0 100px;
-    background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #58a8bc 0%, #ffffff 100%);
     text-align: center;
 }
 
@@ -482,6 +482,10 @@ section {
     color: var(--gray-dark);
 }
 
+#logo {
+    width: 40%;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .about .container,
@@ -547,5 +551,9 @@ section {
     
     .btn {
         padding: 10px 20px;
+    }
+
+    #logo {
+        width: 80%;
     }
 }
