@@ -82,7 +82,7 @@ h4 { font-size: 1.25rem; }
 
 p {
     margin-bottom: 1rem;
-    color: var(--secondary);
+    /* color: var(--secondary); */
 }
 
 .lead {
@@ -408,8 +408,11 @@ section {
     background: linear-gradient(135deg, #d6b46d 0%, #877348 100%); /* Uso i colori primari */
     color: white;
     border-radius: var(--border-radius); /* Arrotondo la sezione */
-    margin: 0 20px; /* Aggiungo margine */
+    width: fit-content;
+    box-shadow: var(--shadow-md);
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-section h2 {
