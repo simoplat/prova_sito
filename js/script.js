@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Menu mobile
+    // Menu mobile con blocco scroll
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
+    const body = document.body;
     
     menuToggle.addEventListener('click', function() {
         nav.classList.toggle('active');
+        // Aggiunge o rimuove il blocco dello scrolling sul body
+        body.classList.toggle('no-scroll');
     });
     
     // Filtri portfolio
@@ -13,9 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Rimuovi active da tutti i bottoni
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Aggiungi active al bottone cliccato
             this.classList.add('active');
             
             const filterValue = this.getAttribute('data-filter');
@@ -32,21 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Form contatti
     const contactForm = document.getElementById('contactForm');
-    
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Simulazione invio form
             const formData = new FormData(this);
             const formValues = Object.fromEntries(formData.entries());
-            
             console.log('Form inviato:', formValues);
-            
-            // Reset form
             this.reset();
-            
-            // Messaggio di successo
             alert('Grazie per il tuo messaggio! Ti risponderemo al più presto.');
         });
     }
@@ -66,9 +59,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
                 
-                // Chiudi menu mobile se aperto
+                // IMPORTANTE: Chiude il menu e ripristina lo scroll al click su un link
                 nav.classList.remove('active');
+                body.classList.remove('no-scroll');
             }
+        });
+    });
+
+    // Chiude il menu e sblocca lo scroll se si clicca su un link semplice della nav
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            nav.classList.remove('active');
+            body.classList.remove('no-scroll');
         });
     });
 });

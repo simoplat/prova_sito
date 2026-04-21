@@ -671,6 +671,10 @@ section {
     }
 }
 
+/* NUOVA CLASSE PER IL BLOCCO SCROLL */
+body.no-scroll {
+    overflow: hidden;
+}
 
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
