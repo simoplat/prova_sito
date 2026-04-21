@@ -74,3 +74,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Fix Resize: se la finestra supera i 768px (Desktop), 
+// rimuove automaticamente il blocco dello scrolling e chiude il menu.
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        document.body.classList.remove('no-scroll');
+        document.querySelector('.nav').classList.remove('active');
+    }
+});
