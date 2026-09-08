@@ -2,21 +2,21 @@
   <!-- Scales of Justice Icon -->
   <g transform="translate(0, 5)">
     <!-- Center pillar -->
-    <rect x="24" y="8" width="2" height="34" rx="1" fill="#1a1a2e"/>
+    <rect x="24" y="8" width="2" height="34" rx="1" fill="#12131c"/>
     <!-- Base -->
-    <rect x="14" y="40" width="22" height="2" rx="1" fill="#1a1a2e"/>
+    <rect x="14" y="40" width="22" height="2" rx="1" fill="#12131c"/>
     <!-- Top triangle -->
-    <polygon points="25,6 18,8 32,8" fill="#c9a96e"/>
+    <polygon points="25,6 18,8 32,8" fill="#b08945"/>
     <!-- Left arm -->
-    <line x1="18" y1="8" x2="6" y2="14" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="18" y1="8" x2="6" y2="14" stroke="#12131c" stroke-width="1.5" stroke-linecap="round"/>
     <!-- Right arm -->
-    <line x1="32" y1="8" x2="44" y2="14" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="32" y1="8" x2="44" y2="14" stroke="#12131c" stroke-width="1.5" stroke-linecap="round"/>
     <!-- Left pan -->
-    <path d="M1 14 Q6 24 11 14" stroke="#c9a96e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M1 14 Q6 24 11 14" stroke="#b08945" stroke-width="1.5" fill="none" stroke-linecap="round"/>
     <!-- Right pan -->
-    <path d="M39 14 Q44 24 49 14" stroke="#c9a96e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M39 14 Q44 24 49 14" stroke="#b08945" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
   <!-- Firm Name -->
-  <text x="62" y="28" font-family="'Cormorant Garamond', Georgia, serif" font-size="22" font-weight="600" fill="#1a1a2e" letter-spacing="2">STUDIO LEGALE</text>
-  <text x="62" y="48" font-family="'Cormorant Garamond', Georgia, serif" font-size="16" font-weight="400" fill="#c9a96e" letter-spacing="4">ROSSI &amp; ASSOCIATI</text>
+  <text x="62" y="27" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-weight="600" fill="#12131c" letter-spacing="2">STUDIO LEGALE</text>
+  <text x="62" y="48" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-weight="600" fill="#b08945" letter-spacing="4">IACOPINO</text>
 </svg>

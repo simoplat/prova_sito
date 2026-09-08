@@ -78,30 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
         revealElements.forEach(el => revealObserver.observe(el));
     }
 
-    // ==============================
-    // Contact Form
-    // ==============================
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            const formValues = Object.fromEntries(formData.entries());
-            console.log('Form inviato:', formValues);
-            this.reset();
-            
-            // Simple success feedback
-            const btn = this.querySelector('.btn');
-            const originalText = btn.textContent;
-            btn.textContent = 'Richiesta Inviata ✓';
-            btn.style.backgroundColor = '#4a8c6f';
-            
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.style.backgroundColor = '';
-            }, 3000);
-        });
-    }
+
 
     // ==============================
     // Smooth scroll for anchor links
