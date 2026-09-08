@@ -1,37 +1,86 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Menu mobile con blocco scroll
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
+    // ==============================
+    // Mobile Menu
+    // ==============================
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
     const body = document.body;
     
-    menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('active');
-        // Aggiunge o rimuove il blocco dello scrolling sul body
-        body.classList.toggle('no-scroll');
-    });
-    
-    // Filtri portfolio
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+            const isOpen = nav.classList.toggle('active');
+            body.classList.toggle('no-scroll', isOpen);
             
-            const filterValue = this.getAttribute('data-filter');
-            
-            portfolioItems.forEach(item => {
-                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
+            // Animate hamburger to X
+            if (isOpen) {
+                menuToggle.innerHTML = `
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                        <line x1="6" y1="18" x2="18" y2="6"/>
+                    </svg>`;
+            } else {
+                menuToggle.innerHTML = `
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>`;
+            }
+        });
+
+        // Close menu on nav link click
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                nav.classList.remove('active');
+                body.classList.remove('no-scroll');
+                menuToggle.innerHTML = `
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>`;
             });
         });
-    });
+    }
+
+    // ==============================
+    // Header scroll effect
+    // ==============================
+    const header = document.getElementById('header');
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }, { passive: true });
+    }
+
+    // ==============================
+    // Scroll Reveal Animations
+    // ==============================
+    const revealElements = document.querySelectorAll('.reveal');
     
-    // Form contatti
+    if (revealElements.length > 0) {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    }
+
+    // ==============================
+    // Contact Form
+    // ==============================
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -40,15 +89,26 @@ document.addEventListener('DOMContentLoaded', function() {
             const formValues = Object.fromEntries(formData.entries());
             console.log('Form inviato:', formValues);
             this.reset();
-            alert('Grazie per il tuo messaggio! Ti risponderemo al più presto.');
+            
+            // Simple success feedback
+            const btn = this.querySelector('.btn');
+            const originalText = btn.textContent;
+            btn.textContent = 'Richiesta Inviata ✓';
+            btn.style.backgroundColor = '#4a8c6f';
+            
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.backgroundColor = '';
+            }, 3000);
         });
     }
-    
-    // Smooth scroll per anchor links
+
+    // ==============================
+    // Smooth scroll for anchor links
+    // ==============================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
             
@@ -59,27 +119,28 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
                 
-                // IMPORTANTE: Chiude il menu e ripristina lo scroll al click su un link
                 nav.classList.remove('active');
                 body.classList.remove('no-scroll');
             }
         });
     });
-
-    // Chiude il menu e sblocca lo scroll se si clicca su un link semplice della nav
-    document.querySelectorAll('.nav a').forEach(link => {
-        link.addEventListener('click', function() {
-            nav.classList.remove('active');
-            body.classList.remove('no-scroll');
-        });
-    });
 });
 
-// Fix Resize: se la finestra supera i 768px (Desktop), 
-// rimuove automaticamente il blocco dello scrolling e chiude il menu.
+// Fix Resize: remove mobile menu state on desktop
 window.addEventListener('resize', function() {
     if (window.innerWidth > 768) {
         document.body.classList.remove('no-scroll');
-        document.querySelector('.nav').classList.remove('active');
+        const nav = document.getElementById('nav');
+        if (nav) nav.classList.remove('active');
+        
+        const menuToggle = document.getElementById('menuToggle');
+        if (menuToggle) {
+            menuToggle.innerHTML = `
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>`;
+        }
     }
 });

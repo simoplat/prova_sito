@@ -3,166 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firmamento Pubblicitario - Azienda Pubblicitaria ad Acireale </title>
+    <title>Lo Studio — Studio Legale Rossi & Associati</title>
+    <meta name="description" content="Scopri lo Studio Legale Rossi & Associati: la nostra filosofia, i nostri valori e il team di professionisti al tuo servizio.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/logo.svg" id="logo"  alt="Nova Logo" width="120">
+                <img src="assets/logo.svg" id="logo" alt="Studio Legale Rossi & Associati">
             </a>
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="servizi.html">Servizi</a></li>
-                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="servizi.html">Aree di Competenza</a></li>
+                    <li><a href="portfolio.html" class="active">Lo Studio</a></li>
                     <li><a href="contatti.html">Contatti</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Apri menu di navigazione">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
         </div>
     </header>
 
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1>Il nostro portfolio</h1>
-                <p>Esplora i progetti che hanno trasformato i brand dei nostri clienti</p>
+                <span class="section-label">Chi Siamo</span>
+                <h1>Lo Studio</h1>
+                <p>Professionalità, rigore e attenzione al cliente dal 2005</p>
             </div>
         </section>
 
-        <section class="portfolio">
+        <!-- Intro Studio -->
+        <section class="studio-intro">
             <div class="container">
-                <div class="portfolio-filters">
-                    <button class="filter-btn active" data-filter="all">Tutti</button>
-                    <button class="filter-btn" data-filter="branding">Branding</button>
-                    <button class="filter-btn" data-filter="digital">Digital</button>
-                    <button class="filter-btn" data-filter="web">Web</button>
-                    <button class="filter-btn" data-filter="content">Content</button>
+                <div class="studio-text reveal">
+                    <span class="section-label">La Nostra Storia</span>
+                    <h2>Un'esperienza consolidata al servizio del diritto</h2>
+                    <p>Lo Studio Legale Rossi & Associati è stato fondato nel 2005 con l'obiettivo di offrire consulenza legale di eccellenza, unendo rigore professionale e approccio umano.</p>
+                    <p>Nel corso degli anni lo Studio ha consolidato la propria reputazione grazie alla competenza dei professionisti che ne fanno parte e alla capacità di affrontare le sfide giuridiche più complesse con soluzioni innovative ed efficaci.</p>
+                    <p>Il nostro approccio si fonda sulla convinzione che ogni caso meriti un'attenzione personalizzata, e che la fiducia del cliente rappresenti il valore più importante da coltivare.</p>
                 </div>
+                <div class="studio-image reveal reveal-delay-2">
+                    <!-- Placeholder SVG -->
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border-radius:8px;background:#f5f3ef;">
+                        <rect width="500" height="400" fill="#f0eeea"/>
+                        <!-- Bookshelf -->
+                        <rect x="40" y="40" width="420" height="20" rx="2" fill="#e8e6e1"/>
+                        <rect x="40" y="120" width="420" height="20" rx="2" fill="#e8e6e1"/>
+                        <rect x="40" y="200" width="420" height="20" rx="2" fill="#e8e6e1"/>
+                        <!-- Books row 1 -->
+                        <rect x="60" y="60" width="20" height="60" rx="2" fill="#c9a96e" opacity="0.5"/>
+                        <rect x="85" y="65" width="18" height="55" rx="2" fill="#1a1a2e" opacity="0.2"/>
+                        <rect x="108" y="60" width="22" height="60" rx="2" fill="#c9a96e" opacity="0.35"/>
+                        <rect x="135" y="68" width="16" height="52" rx="2" fill="#1a1a2e" opacity="0.15"/>
+                        <rect x="156" y="60" width="24" height="60" rx="2" fill="#c9a96e" opacity="0.25"/>
+                        <rect x="200" y="62" width="20" height="58" rx="2" fill="#1a1a2e" opacity="0.18"/>
+                        <rect x="225" y="60" width="18" height="60" rx="2" fill="#c9a96e" opacity="0.4"/>
+                        <rect x="260" y="65" width="22" height="55" rx="2" fill="#1a1a2e" opacity="0.12"/>
+                        <rect x="290" y="60" width="16" height="60" rx="2" fill="#c9a96e" opacity="0.3"/>
+                        <!-- Books row 2 -->
+                        <rect x="60" y="140" width="22" height="60" rx="2" fill="#1a1a2e" opacity="0.15"/>
+                        <rect x="87" y="145" width="18" height="55" rx="2" fill="#c9a96e" opacity="0.4"/>
+                        <rect x="110" y="140" width="24" height="60" rx="2" fill="#c9a96e" opacity="0.25"/>
+                        <rect x="140" y="148" width="16" height="52" rx="2" fill="#1a1a2e" opacity="0.2"/>
+                        <rect x="170" y="140" width="20" height="60" rx="2" fill="#c9a96e" opacity="0.35"/>
+                        <!-- Scale icon -->
+                        <circle cx="350" cy="300" r="50" fill="#c9a96e" opacity="0.08"/>
+                        <text x="250" y="375" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#aba9a4">Immagine Studio</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
 
-                <div class="portfolio-grid">
-                    <div class="portfolio-item" data-category="branding">
-                        <div class="portfolio-image" style="background-color: #f5f5f5;"></div>
-                        <div class="portfolio-info">
-                            <h3>TechCorp Rebranding</h3>
-                            <p>Strategia di marca completa per azienda tech</p>
-                            <span class="portfolio-category">Branding</span>
-                        </div>
+        <!-- Valori -->
+        <section class="practice-areas">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">I Nostri Valori</span>
+                    <h2>I pilastri del nostro lavoro</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="values-grid">
+                    <div class="value-item reveal">
+                        <div class="value-number">01</div>
+                        <h3>Competenza</h3>
+                        <p>Aggiornamento costante e formazione continua per garantire ai clienti soluzioni giuridiche all'avanguardia e in linea con le più recenti evoluzioni normative.</p>
                     </div>
-                    
-                    <div class="portfolio-item" data-category="digital">
-                        <div class="portfolio-image" style="background-color: #eaeaea;"></div>
-                        <div class="portfolio-info">
-                            <h3>VerdeVita Social Campaign</h3>
-                            <p>Strategia social media per brand sostenibile</p>
-                            <span class="portfolio-category">Digital</span>
-                        </div>
+                    <div class="value-item reveal reveal-delay-1">
+                        <div class="value-number">02</div>
+                        <h3>Riservatezza</h3>
+                        <p>Il rapporto fiduciario con il cliente è sacro. Garantiamo la massima discrezione nella trattazione di ogni pratica, nel rispetto del segreto professionale.</p>
                     </div>
-                    
-                    <div class="portfolio-item" data-category="web">
-                        <div class="portfolio-image" style="background-color: #e0e0e0;"></div>
-                        <div class="portfolio-info">
-                            <h3>Luma E-commerce</h3>
-                            <p>Piattaforma e-commerce per brand di moda</p>
-                            <span class="portfolio-category">Web</span>
-                        </div>
-                    </div>
-                    
-                    <div class="portfolio-item" data-category="content">
-                        <div class="portfolio-image" style="background-color: #d5d5d5;"></div>
-                        <div class="portfolio-info">
-                            <h3>Foodies Video Series</h3>
-                            <p>Produzione video per app gastronomica</p>
-                            <span class="portfolio-category">Content</span>
-                        </div>
-                    </div>
-                    
-                    <div class="portfolio-item" data-category="branding">
-                        <div class="portfolio-image" style="background-color: #cacaca;"></div>
-                        <div class="portfolio-info">
-                            <h3>Bloom Identity</h3>
-                            <p>Identità visiva per startup floristica</p>
-                            <span class="portfolio-category">Branding</span>
-                        </div>
-                    </div>
-                    
-                    <div class="portfolio-item" data-category="digital">
-                        <div class="portfolio-image" style="background-color: #bfbfbf;"></div>
-                        <div class="portfolio-info">
-                            <h3>FinX App Launch</h3>
-                            <p>Campagna digitale per lancio app finanziaria</p>
-                            <span class="portfolio-category">Digital</span>
-                        </div>
+                    <div class="value-item reveal reveal-delay-2">
+                        <div class="value-number">03</div>
+                        <h3>Trasparenza</h3>
+                        <p>Comunicazione chiara e puntuale sull'andamento delle pratiche, i costi e le prospettive. Il cliente è sempre informato e coinvolto nelle scelte strategiche.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Team -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">I Professionisti</span>
+                    <h2>Il nostro team</h2>
+                    <div class="section-divider"></div>
+                    <p>Professionisti qualificati con competenze complementari, uniti dalla passione per il diritto</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card reveal">
+                        <div class="team-photo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="5"/>
+                                <path d="M3 21c0-4.97 4.03-9 9-9s9 4.03 9 9"/>
+                            </svg>
+                        </div>
+                        <h3>Avv. Mario Rossi</h3>
+                        <span class="team-role">Fondatore — Diritto Civile</span>
+                        <p>Iscritto all'Albo dal 1998. Specializzato in diritto civile e contrattualistica con oltre 25 anni di esperienza.</p>
+                    </div>
+                    <div class="team-card reveal reveal-delay-1">
+                        <div class="team-photo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="5"/>
+                                <path d="M3 21c0-4.97 4.03-9 9-9s9 4.03 9 9"/>
+                            </svg>
+                        </div>
+                        <h3>Avv. Laura Bianchi</h3>
+                        <span class="team-role">Socia — Diritto del Lavoro</span>
+                        <p>Specializzata in diritto del lavoro e previdenziale. Consulente per aziende e lavoratori su tutto il territorio nazionale.</p>
+                    </div>
+                    <div class="team-card reveal reveal-delay-2">
+                        <div class="team-photo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="5"/>
+                                <path d="M3 21c0-4.97 4.03-9 9-9s9 4.03 9 9"/>
+                            </svg>
+                        </div>
+                        <h3>Avv. Marco Verdi</h3>
+                        <span class="team-role">Associato — Diritto Penale</span>
+                        <p>Penalista con esperienza in reati contro la persona e il patrimonio. Docente in procedura penale presso l'Università.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
         <section class="testimonials">
             <div class="container">
-                <h2>Cosa dicono i nostri clienti</h2>
-                <div class="testimonial-slider">
-                    <div class="testimonial">
-                        <blockquote>
-                            "Nova ha trasformato completamente la nostra presenza online. In 6 mesi abbiamo raddoppiato il traffico e aumentato le conversioni del 40%."
-                        </blockquote>
-                        <div class="testimonial-author">
-                            <div class="author-avatar"></div>
-                            <div class="author-info">
-                                <h4>Marco Bianchi</h4>
-                                <p>CEO, TechCorp</p>
-                            </div>
+                <div class="section-header">
+                    <span class="section-label">Testimonianze</span>
+                    <h2>La fiducia dei nostri clienti</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="testimonial reveal">
+                    <blockquote>
+                        Lo Studio Legale Rossi & Associati ha gestito la mia pratica con estrema professionalità e competenza. Mi sono sentito seguito e tutelato in ogni fase del procedimento. Un punto di riferimento affidabile.
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Nome Cognome</h4>
+                            <p>Cliente — Diritto Civile</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Hai bisogno di assistenza legale?</h2>
+                <p>Contattaci per una consulenza personalizzata. Il primo incontro conoscitivo è senza impegno.</p>
+                <a href="contatti.html" class="btn btn-primary">Prenota un Appuntamento</a>
             </div>
         </section>
     </main>
 
-        <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- <div class="footer-col">
-                    <img src="assets/logo.svg" alt="Nova Logo" width="100">
-                    <p>Via Provinciale per Santa Maria Ammalati 5<br>95024 Acireale (CT)</p>
-                </div> -->
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="Studio Legale Rossi & Associati" style="width:220px;filter:brightness(0) invert(1);opacity:0.8;margin-bottom:8px;">
+                    <p>Consulenza ed assistenza legale qualificata al servizio dei vostri diritti.</p>
+                </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="index.html">🏠 Home</a></li>
-                        <li><a href="servizi.html">🛠️ Servizi</a></li>
-                        <li><a href="portfolio.html">🖼️ Portfolio</a></li>
-                        <li><a href="contatti.html">✉️ Contatti</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servizi.html">Aree di Competenza</a></li>
+                        <li><a href="portfolio.html">Lo Studio</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4><a href="contatti.html">Contatti</a></h4>
+                    <h4>Contatti</h4>
                     <ul>
-                        <li><a href="mailto:firmamentopubblicita@libero.it">firmamentopubblicita@libero.it📧</a></li>
-                        <li><a href="tel:+393476614207">+39 347 6614207 📞</a></li>
+                        <li><a href="mailto:info@studiolegalerossi.it">info@studiolegalerossi.it</a></li>
+                        <li><a href="tel:+390123456789">+39 012 345 6789</a></li>
+                        <li>Via Roma, 123<br>00100 Roma (RM)</li>
                     </ul>
                 </div>
-                <!-- <div class="footer-col">
-                    <h4>Seguici</h4>
-                    <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Behance</a>
-                    </div>
-                </div> -->
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Firmamento Pubblicitario. Tutti i diritti riservati.</p>
+                <p>&copy; 2026 Studio Legale Rossi & Associati. Tutti i diritti riservati. — P.IVA 00000000000</p>
             </div>
         </div>
     </footer>
 
-
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

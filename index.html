@@ -3,120 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firmamento Pubblicitario - Azienda Pubblicitaria ad Acireale </title>
+    <title>Studio Legale Rossi & Associati — Consulenza Legale Professionale</title>
+    <meta name="description" content="Studio Legale Rossi & Associati offre consulenza legale qualificata in diritto civile, penale, del lavoro, di famiglia, societario e immobiliare.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="js/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/logo.svg" id="logo"  alt="Nova Logo" width="120">
+                <img src="assets/logo.svg" id="logo" alt="Studio Legale Rossi & Associati">
             </a>
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="servizi.html">Servizi</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="servizi.html">Aree di Competenza</a></li>
+                    <li><a href="portfolio.html">Lo Studio</a></li>
                     <li><a href="contatti.html">Contatti</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Apri menu di navigazione">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
         </div>
     </header>
 
     <main>
+        <!-- Hero -->
         <section class="hero">
+            <div class="hero-decoration"></div>
             <div class="container">
-                <h1>Creiamo successi pubblicitari. <br> I vostri.</h1>
-                <p class="lead">Strategie comunicative che trasformano idee in realtà immortali</p>
-                <a href="servizi.html" class="btn btn-primary">Scopri di più</a>
+                <span class="section-label">Studio Legale Rossi & Associati</span>
+                <h1>Tutela, competenza, risultati</h1>
+                <p class="lead">Assistenza legale qualificata al servizio dei vostri diritti, con dedizione e riservatezza</p>
+                <a href="contatti.html" class="btn btn-primary">Richiedi una Consulenza</a>
             </div>
         </section>
 
+        <!-- Chi Siamo -->
         <section class="about">
-            <div class="container"> <div class="about-content">
-                    <h2>Chi siamo</h2>
-                    <p>Firmamento rappresenta una realtà pubblicitaria d'avanguardia L'esperienza ventennale si coniuga alla modernità dei servizi che offre. 
-                        Azienda leader nel campo delle distribuzioni di volantini su tutto il territorio siciliano, propone delle innovazioni nel campo del porta a porta e della veicolazione del materiale pubblicitario in generale.
-                        Firmamento oggi oltre alla gestione della pubblicità tradizionale che passa da quella diretta a quella di grande formato come i cartelloni e gli schermi TV propone anche soluzioni di pubblicità digitale, con la gestione efficiente delle pagine social web.
-                        L'azienda è specializzata nel progettare campagne pubblicitarie articolate, costruite su misura dei vari clienti.
-                        La politica storica di Firmamento è quella di offrire un servizio che sposa la qualità al prezzo ragionevole.
-                        Vari sono i servizi pubblicitari che servono a dare visibilità alle aziende. Firmamento cerca di individuare quello idoneo ai vari utenti interessati.
-                        Contattateci per un preventivo gratuito</p>
+            <div class="container">
+                <div class="about-content reveal">
+                    <span class="section-label">Chi Siamo</span>
+                    <h2>Un impegno costante nella tutela dei vostri interessi</h2>
+                    <p>Lo Studio Legale Rossi & Associati nasce dalla volontà di offrire un servizio di consulenza ed assistenza legale di alto profilo, fondato su competenza, trasparenza e attenzione al cliente.</p>
+                    <p>Con un'esperienza consolidata nelle principali aree del diritto, il nostro team di professionisti si distingue per l'approccio rigoroso e personalizzato ad ogni singola questione legale.</p>
+                    <a href="portfolio.html" class="btn btn-secondary">Scopri lo Studio</a>
                 </div>
-                <div class="about-image">
-                    <img src="assets/Piccadilly_Circus_2005.jpg" alt="Chi siamo">
+                <div class="about-image reveal reveal-delay-2">
+                    <!-- Placeholder image with SVG -->
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border-radius:8px;background:#f5f3ef;">
+                        <rect width="500" height="400" fill="#f0eeea"/>
+                        <rect x="60" y="80" width="160" height="240" rx="4" fill="#e8e6e1"/>
+                        <rect x="80" y="100" width="120" height="160" rx="2" fill="#dddbd6"/>
+                        <circle cx="140" cy="155" r="30" fill="#c9a96e" opacity="0.3"/>
+                        <rect x="100" y="200" width="80" height="6" rx="3" fill="#c9a96e" opacity="0.4"/>
+                        <rect x="110" y="215" width="60" height="4" rx="2" fill="#c9a96e" opacity="0.25"/>
+                        <rect x="280" y="60" width="160" height="280" rx="4" fill="#e8e6e1"/>
+                        <rect x="300" y="80" width="120" height="200" rx="2" fill="#dddbd6"/>
+                        <circle cx="360" cy="150" r="35" fill="#c9a96e" opacity="0.2"/>
+                        <rect x="320" y="210" width="80" height="6" rx="3" fill="#c9a96e" opacity="0.4"/>
+                        <rect x="330" y="225" width="60" height="4" rx="2" fill="#c9a96e" opacity="0.25"/>
+                        <text x="250" y="375" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#aba9a4">Immagine Studio</text>
+                    </svg>
                 </div>
             </div>
         </section>
 
-        <section class="featured-work">
+        <!-- Aree di Competenza Preview -->
+        <section class="practice-areas">
             <div class="container">
-                <h2>Lavori in evidenza</h2>
-                <div class="work-grid">
-                    <div class="work-item">
-                        <div class="work-image" style="background-color: #f0f0f0;"></div>
-                        <h3>Rebranding Globale - TechCorp</h3>
-                        <p>Strategia di marca e identità visiva</p>
+                <div class="section-header">
+                    <span class="section-label">Le Nostre Competenze</span>
+                    <h2>Aree di Competenza</h2>
+                    <div class="section-divider"></div>
+                    <p>Un approccio multidisciplinare per offrirvi la migliore assistenza in ogni ambito del diritto</p>
+                </div>
+                <div class="areas-grid">
+                    <!-- Diritto Civile -->
+                    <div class="area-card reveal">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="6" y="8" width="36" height="32" rx="3"/>
+                                <line x1="14" y1="18" x2="34" y2="18"/>
+                                <line x1="14" y1="24" x2="34" y2="24"/>
+                                <line x1="14" y1="30" x2="26" y2="30"/>
+                            </svg>
+                        </div>
+                        <h3>Diritto Civile</h3>
+                        <p>Contrattualistica, responsabilità civile, recupero crediti e tutela dei diritti patrimoniali</p>
                     </div>
-                    <div class="work-item">
-                        <div class="work-image" style="background-color: #e0e0e0;"></div>
-                        <h3>Campagna Social - VerdeVita</h3>
-                        <p>Strategia social media + contenuti</p>
+                    <!-- Diritto Penale -->
+                    <div class="area-card reveal reveal-delay-1">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M24 6L24 18"/>
+                                <path d="M12 18L36 18"/>
+                                <path d="M12 18L6 28"/>
+                                <path d="M36 18L42 28"/>
+                                <path d="M2 28Q6 36 10 28"/>
+                                <path d="M38 28Q42 36 46 28"/>
+                                <line x1="24" y1="18" x2="24" y2="38"/>
+                                <line x1="14" y1="38" x2="34" y2="38"/>
+                            </svg>
+                        </div>
+                        <h3>Diritto Penale</h3>
+                        <p>Difesa in procedimenti penali, assistenza alle vittime di reato e consulenza preventiva</p>
                     </div>
-                    <div class="work-item">
-                        <div class="work-image" style="background-color: #d0d0d0;"></div>
-                        <h3>Sito E-commerce - Luma</h3>
-                        <p>Design e sviluppo piattaforma</p>
+                    <!-- Diritto del Lavoro -->
+                    <div class="area-card reveal reveal-delay-2">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="24" cy="14" r="8"/>
+                                <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
+                            </svg>
+                        </div>
+                        <h3>Diritto del Lavoro</h3>
+                        <p>Controversie lavorative, licenziamenti, contratti di lavoro e previdenza sociale</p>
+                    </div>
+                    <!-- Diritto di Famiglia -->
+                    <div class="area-card reveal reveal-delay-3">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="16" cy="14" r="6"/>
+                                <circle cx="32" cy="14" r="6"/>
+                                <path d="M6 38c0-5.523 4.477-10 10-10"/>
+                                <path d="M42 38c0-5.523-4.477-10-10-10"/>
+                                <circle cx="24" cy="32" r="5"/>
+                            </svg>
+                        </div>
+                        <h3>Diritto di Famiglia</h3>
+                        <p>Separazioni, divorzi, affidamento minori, successioni e tutela patrimoniale familiare</p>
+                    </div>
+                    <!-- Diritto Societario -->
+                    <div class="area-card reveal reveal-delay-4">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="8" y="16" width="32" height="24" rx="2"/>
+                                <path d="M16 16V12a8 8 0 0116 0v4"/>
+                                <circle cx="24" cy="28" r="4"/>
+                                <line x1="24" y1="32" x2="24" y2="36"/>
+                            </svg>
+                        </div>
+                        <h3>Diritto Societario</h3>
+                        <p>Costituzione società, governance, operazioni straordinarie e contenzioso societario</p>
+                    </div>
+                    <!-- Diritto Immobiliare -->
+                    <div class="area-card reveal reveal-delay-5">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 22L24 8L42 22"/>
+                                <rect x="10" y="22" width="28" height="20" rx="1"/>
+                                <rect x="18" y="30" width="12" height="12"/>
+                                <line x1="24" y1="30" x2="24" y2="42"/>
+                                <line x1="18" y1="36" x2="30" y2="36"/>
+                            </svg>
+                        </div>
+                        <h3>Diritto Immobiliare</h3>
+                        <p>Compravendite, locazioni, diritti reali, condominio e contenzioso immobiliare</p>
                     </div>
                 </div>
-                <a href="portfolio.html" class="btn btn-secondary">Vedi tutti i progetti</a>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Hai bisogno di assistenza legale?</h2>
+                <p>Contattaci per una consulenza personalizzata. Analizzeremo insieme la tua situazione.</p>
+                <a href="contatti.html" class="btn btn-primary">Prenota un Appuntamento</a>
             </div>
         </section>
     </main>
 
-        <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- <div class="footer-col">
-                    <img src="assets/logo.svg" alt="Nova Logo" width="100">
-                    <p>Via Provinciale per Santa Maria Ammalati 5<br>95024 Acireale (CT)</p>
-                </div> -->
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="Studio Legale Rossi & Associati" style="width:220px;filter:brightness(0) invert(1);opacity:0.8;margin-bottom:8px;">
+                    <p>Consulenza ed assistenza legale qualificata al servizio dei vostri diritti.</p>
+                </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="index.html">🏠 Home</a></li>
-                        <li><a href="servizi.html">🛠️ Servizi</a></li>
-                        <li><a href="portfolio.html">🖼️ Portfolio</a></li>
-                        <li><a href="contatti.html">✉️ Contatti</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servizi.html">Aree di Competenza</a></li>
+                        <li><a href="portfolio.html">Lo Studio</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4><a href="contatti.html">Contatti</a></h4>
+                    <h4>Contatti</h4>
                     <ul>
-                        <li><a href="mailto:firmamentopubblicita@libero.it">firmamentopubblicita@libero.it📧</a></li>
-                        <li><a href="tel:+393476614207">+39 347 6614207 📞</a></li>
+                        <li><a href="mailto:info@studiolegalerossi.it">info@studiolegalerossi.it</a></li>
+                        <li><a href="tel:+390123456789">+39 012 345 6789</a></li>
+                        <li>Via Roma, 123<br>00100 Roma (RM)</li>
                     </ul>
                 </div>
-                <!-- <div class="footer-col">
-                    <h4>Seguici</h4>
-                    <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Behance</a>
-                    </div>
-                </div> -->
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Firmamento Pubblicitario. Tutti i diritti riservati.</p>
+                <p>&copy; 2026 Studio Legale Rossi & Associati. Tutti i diritti riservati. — P.IVA 00000000000</p>
             </div>
         </div>
     </footer>
 
-
+    <script src="js/script.js" defer></script>
 </body>
 </html>

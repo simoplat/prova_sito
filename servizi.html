@@ -3,139 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firmamento Pubblicitario - Azienda Pubblicitaria ad Acireale </title>
+    <title>Aree di Competenza — Studio Legale Rossi & Associati</title>
+    <meta name="description" content="Le aree di competenza dello Studio Legale Rossi & Associati: diritto civile, penale, del lavoro, di famiglia, societario e immobiliare.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/logo.svg" id="logo" alt="Nova Logo" width="120">
+                <img src="assets/logo.svg" id="logo" alt="Studio Legale Rossi & Associati">
             </a>
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="servizi.html" class="active">Servizi</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="servizi.html" class="active">Aree di Competenza</a></li>
+                    <li><a href="portfolio.html">Lo Studio</a></li>
                     <li><a href="contatti.html">Contatti</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Apri menu di navigazione">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
         </div>
     </header>
 
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1>I nostri servizi</h1>
-                <p>Soluzioni integrate per far crescere il tuo brand</p>
+                <span class="section-label">I Nostri Servizi</span>
+                <h1>Aree di Competenza</h1>
+                <p>Assistenza legale specializzata in molteplici ambiti del diritto</p>
             </div>
         </section>
 
         <section class="services">
             <div class="container">
-                <div class="service-card">
-                    <div class="service-icon">🖌️</div>
-                    <h3>Brand Identity</h3>
-                    <p>Creiamo identità di marca distintive che comunicano valori e personalità uniche, dalla strategia al design system.</p>
+                <!-- Diritto Civile -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="6" y="8" width="36" height="32" rx="3"/>
+                            <line x1="14" y1="18" x2="34" y2="18"/>
+                            <line x1="14" y1="24" x2="34" y2="24"/>
+                            <line x1="14" y1="30" x2="26" y2="30"/>
+                        </svg>
+                    </div>
+                    <h3>Diritto Civile</h3>
+                    <p>Lo Studio offre assistenza qualificata in ambito civilistico, dalla fase stragiudiziale a quella contenziosa, garantendo una tutela efficace dei diritti patrimoniali e personali dei clienti.</p>
                     <ul class="service-features">
-                        <li>Analisi di mercato</li>
-                        <li>Posizionamento strategico</li>
-                        <li>Design dell'identità</li>
-                        <li>Linee guida del brand</li>
+                        <li>Contrattualistica e negoziazione</li>
+                        <li>Responsabilità civile e risarcimento danni</li>
+                        <li>Recupero crediti e procedure esecutive</li>
+                        <li>Diritto delle obbligazioni</li>
+                        <li>Tutela del consumatore</li>
                     </ul>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Digital Strategy</h3>
-                    <p>Piani digitali su misura per raggiungere i tuoi obiettivi di business online, con metriche chiare e risultati misurabili.</p>
+
+                <!-- Diritto Penale -->
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M24 6L24 18"/>
+                            <path d="M12 18L36 18"/>
+                            <path d="M12 18L6 28"/>
+                            <path d="M36 18L42 28"/>
+                            <path d="M2 28Q6 36 10 28"/>
+                            <path d="M38 28Q42 36 46 28"/>
+                            <line x1="24" y1="18" x2="24" y2="38"/>
+                            <line x1="14" y1="38" x2="34" y2="38"/>
+                        </svg>
+                    </div>
+                    <h3>Diritto Penale</h3>
+                    <p>Difesa penale rigorosa e competente in ogni grado di giudizio, con particolare attenzione alla tutela delle garanzie individuali e al raggiungimento del miglior risultato possibile.</p>
                     <ul class="service-features">
-                        <li>Social media strategy</li>
-                        <li>Content marketing</li>
-                        <li>Advertising digitale</li>
-                        <li>Analisi dati</li>
+                        <li>Difesa in procedimenti penali</li>
+                        <li>Assistenza alle vittime di reato</li>
+                        <li>Reati contro la persona e il patrimonio</li>
+                        <li>Diritto penale dell'economia</li>
+                        <li>Consulenza penale preventiva</li>
                     </ul>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🖥️</div>
-                    <h3>Web Design & Development</h3>
-                    <p>Siti web performanti e user-centered, combinando design accattivante con tecnologia all'avanguardia.</p>
+
+                <!-- Diritto del Lavoro -->
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="24" cy="14" r="8"/>
+                            <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
+                        </svg>
+                    </div>
+                    <h3>Diritto del Lavoro</h3>
+                    <p>Assistenza completa in materia giuslavoristica, sia per il lavoratore che per il datore di lavoro, nella gestione delle controversie individuali e collettive.</p>
                     <ul class="service-features">
-                        <li>UI/UX design</li>
-                        <li>Sviluppo front-end</li>
-                        <li>E-commerce</li>
-                        <li>Ottimizzazione SEO</li>
+                        <li>Licenziamenti e impugnazioni</li>
+                        <li>Contratti di lavoro e consulenza</li>
+                        <li>Mobbing e discriminazioni</li>
+                        <li>Previdenza e assistenza sociale</li>
+                        <li>Controversie sindacali</li>
                     </ul>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🎥</div>
-                    <h3>Content Production</h3>
-                    <p>Contenuti visivi e narrativi di alto impatto che raccontano la storia del tuo brand in modo autentico.</p>
+
+                <!-- Diritto di Famiglia -->
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="16" cy="14" r="6"/>
+                            <circle cx="32" cy="14" r="6"/>
+                            <path d="M6 38c0-5.523 4.477-10 10-10"/>
+                            <path d="M42 38c0-5.523-4.477-10-10-10"/>
+                            <circle cx="24" cy="32" r="5"/>
+                        </svg>
+                    </div>
+                    <h3>Diritto di Famiglia</h3>
+                    <p>Accompagnamento sensibile e professionale nelle delicate questioni familiari, privilegiando soluzioni consensuali senza mai rinunciare alla tutela dei diritti del cliente.</p>
                     <ul class="service-features">
-                        <li>Post</li>
-                        <li>Video production</li>
-                        <li>Contenuti Social</li>
-                        <li>Video</li>
-                        <li>Stories</li>
+                        <li>Separazioni e divorzi</li>
+                        <li>Affidamento e mantenimento figli</li>
+                        <li>Successioni e testamenti</li>
+                        <li>Tutela dei minori</li>
+                        <li>Patti di convivenza e unioni civili</li>
+                    </ul>
+                </div>
+
+                <!-- Diritto Societario -->
+                <div class="service-card reveal reveal-delay-4">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="8" y="16" width="32" height="24" rx="2"/>
+                            <path d="M16 16V12a8 8 0 0116 0v4"/>
+                            <circle cx="24" cy="28" r="4"/>
+                            <line x1="24" y1="32" x2="24" y2="36"/>
+                        </svg>
+                    </div>
+                    <h3>Diritto Societario</h3>
+                    <p>Consulenza strategica per imprese e società, dalla fase costitutiva alle operazioni straordinarie, con un approccio orientato alla prevenzione del contenzioso.</p>
+                    <ul class="service-features">
+                        <li>Costituzione e trasformazione societaria</li>
+                        <li>Governance e compliance</li>
+                        <li>Fusioni, scissioni e acquisizioni</li>
+                        <li>Patti parasociali</li>
+                        <li>Contenzioso societario</li>
+                    </ul>
+                </div>
+
+                <!-- Diritto Immobiliare -->
+                <div class="service-card reveal reveal-delay-5">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 22L24 8L42 22"/>
+                            <rect x="10" y="22" width="28" height="20" rx="1"/>
+                            <rect x="18" y="30" width="12" height="12"/>
+                            <line x1="24" y1="30" x2="24" y2="42"/>
+                            <line x1="18" y1="36" x2="30" y2="36"/>
+                        </svg>
+                    </div>
+                    <h3>Diritto Immobiliare</h3>
+                    <p>Assistenza completa nel settore immobiliare, dalla due diligence alle operazioni di compravendita, con attenzione ai profili urbanistici e catastali.</p>
+                    <ul class="service-features">
+                        <li>Compravendite immobiliari</li>
+                        <li>Contratti di locazione</li>
+                        <li>Diritti reali e servitù</li>
+                        <li>Diritto condominiale</li>
+                        <li>Contenzioso immobiliare</li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- CTA -->
         <section class="cta-section">
             <div class="container">
-                <h2>Pronto a trasformare il tuo brand?</h2>
-                <p>Parlaci del tuo progetto e scopri come possiamo aiutarti a raggiungere i tuoi obiettivi.</p>
-                <a href="contatti.html" class="btn btn-primary">Contattaci</a>
+                <h2>Hai bisogno di assistenza legale?</h2>
+                <p>Contattaci per una consulenza personalizzata. Il primo incontro conoscitivo è senza impegno.</p>
+                <a href="contatti.html" class="btn btn-primary">Prenota un Appuntamento</a>
             </div>
         </section>
     </main>
 
-        <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- <div class="footer-col">
-                    <img src="assets/logo.svg" alt="Nova Logo" width="100">
-                    <p>Via Provinciale per Santa Maria Ammalati 5<br>95024 Acireale (CT)</p>
-                </div> -->
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="Studio Legale Rossi & Associati" style="width:220px;filter:brightness(0) invert(1);opacity:0.8;margin-bottom:8px;">
+                    <p>Consulenza ed assistenza legale qualificata al servizio dei vostri diritti.</p>
+                </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="index.html">🏠 Home</a></li>
-                        <li><a href="servizi.html">🛠️ Servizi</a></li>
-                        <li><a href="portfolio.html">🖼️ Portfolio</a></li>
-                        <li><a href="contatti.html">✉️ Contatti</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servizi.html">Aree di Competenza</a></li>
+                        <li><a href="portfolio.html">Lo Studio</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4><a href="contatti.html">Contatti</a></h4>
+                    <h4>Contatti</h4>
                     <ul>
-                        <li><a href="mailto:firmamentopubblicita@libero.it">firmamentopubblicita@libero.it📧</a></li>
-                        <li><a href="tel:+393476614207">+39 347 6614207 📞</a></li>
+                        <li><a href="mailto:info@studiolegalerossi.it">info@studiolegalerossi.it</a></li>
+                        <li><a href="tel:+390123456789">+39 012 345 6789</a></li>
+                        <li>Via Roma, 123<br>00100 Roma (RM)</li>
                     </ul>
                 </div>
-                <!-- <div class="footer-col">
-                    <h4>Seguici</h4>
-                    <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Behance</a>
-                    </div>
-                </div> -->
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Firmamento Pubblicitario. Tutti i diritti riservati.</p>
+                <p>&copy; 2026 Studio Legale Rossi & Associati. Tutti i diritti riservati. — P.IVA 00000000000</p>
             </div>
         </div>
     </footer>
 
-
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
-</html><!DOCTYPE html>
+</html>
